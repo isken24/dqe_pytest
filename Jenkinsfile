@@ -7,9 +7,9 @@ pipeline {
                 echo 'Building..'
             }
         }
-        stage('Test') {
+        stage('Demo run') {
             steps {
-                echo 'Testing..'
+                sh './demo_run.sh'
             }
         }
         stage('Deploy') {
