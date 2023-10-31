@@ -10,7 +10,7 @@ pipeline {
         stage('Demo run') {
             steps {
                 sh "chmod +x -R ${env.WORKSPACE}"
-                sh '/var/jenkins_home/workspace/dqe_pytest_pipeline/demo_run.sh'
+                sh "${env.WORKSPACE}/demo_run.sh"
             }
         }
         stage('Deploy') {
