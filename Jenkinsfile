@@ -9,6 +9,7 @@ pipeline {
         }
         stage('Demo run') {
             steps {
+                sh "chmod +x -R ${env.WORKSPACE}"
                 sh './demo_run.sh'
             }
         }
