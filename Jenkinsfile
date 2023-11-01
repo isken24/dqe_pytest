@@ -9,6 +9,7 @@ pipeline {
         }
         stage('Demo run') {
             steps {
+                sh "pip install python"
                 sh "chmod +x -R ${env.WORKSPACE}"
                 sh "${env.WORKSPACE}/demo_run.sh"
             }
