@@ -10,7 +10,8 @@ pipeline {
         stage('Demo run') {
             steps {
                 sh "chmod +x -R ${env.WORKSPACE}"
-                sh "${env.WORKSPACE}/demo_run.sh"
+                sh "pip install -r ./requirements.txt"
+                sh "./demo_run.sh"
             }
         }
         stage('Deploy') {
