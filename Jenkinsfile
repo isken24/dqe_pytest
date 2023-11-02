@@ -10,7 +10,7 @@ pipeline {
         stage('Demo run') {
             steps {
                 sh "chmod +x -R ${env.WORKSPACE}"
-                sh "apt install python3-pytest"
+                sh "apt install -y python3-pytest"
                 sh "./demo_run.sh"
             }
         }
