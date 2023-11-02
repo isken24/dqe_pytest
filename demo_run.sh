@@ -1,1 +1,1 @@
-python3 demo_run.py
+pytest ./tests/test_demo.py
