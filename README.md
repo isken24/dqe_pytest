@@ -41,4 +41,4 @@ Generating Allure Reports:
 	Serve the Allure report:
 
 		allure serve allure-report
-  end
+
