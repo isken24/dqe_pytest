@@ -1,1 +1,1 @@
-pytest ./tests/test_demo.py
+pytest ./tests
